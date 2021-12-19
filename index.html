@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="cs">
+<head>
+	<title>Plánovač bytu</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, minimal-ui">
+	<link rel="stylesheet" type="text/css" href="/css/main.css?1">
+</head>
+<body>
+	<div id="content">
+		<div id="panel">
+			<div>
+				<label>
+					Šířka [m] <input type="text" value="5" placeholder="[m]" data-bind="inputWidth" />
+				</label>
+				<label>
+					Výška [m] <input type="text" value="5" placeholder="[m]" data-bind="inputHeight" />
+				</label>
+				<div>
+					<button type="button" data-event="click:setBtn">Nastavit</button>
+				</div>
+				<div style="margin-top: 25px;">
+					<button type="button" data-event="click:userAdd">Přidat</button>
+					<button type="button" data-event="click:userClean">Smazat vše</button>
+					<label style="margin-top: 25px;">
+						Nový projekt
+						<input type="text" value="new-project" placeholder="" data-bind="inputProject" />
+					</label>
+					<div>
+						<button type="button" data-event="click:addProject">Vytvořit projekt</button>
+					</div>
+					<label style="margin-top: 25px;">
+						Projekt
+						<select data-bind="projectsList" data-event="change:projectChange"></select>
+					</label>
+					<label style="margin-top: 25px;">
+						Název listu <input type="text" value="new-name" placeholder="" data-bind="listName" />
+					</label>
+					<div>
+						<button type="button" data-event="click:saveList">Uložit</button>
+					</div>
+					<div style="margin-top: 25px;">
+						Seznam listů
+						<select data-bind="projectList"></select>
+					</div>
+					<div>
+						<button type="button" data-event="click:loadList">Načíst</button>
+						<button type="button" data-event="click:removeList">Smazat</button>
+					</div>
+					<div style="margin-top: 25px;">
+						<button type="button" data-event="click:saveJSON">Uložit do souboru</button>
+						<button type="button" data-event="click:saveAsImage">Uložit jako obrázek</button>
+						<button type="button" data-event="click:clearMemory">Vyčistit paměť browseru</button>
+						<input type="file" data-bind="jsonFile" style="margin-top: 25px;" />
+						<button type="button" data-event="click:loadJSON" style="margin-top: 5px;">Načíst ze souboru</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="canvas">
+			<div data-bind="canvasPlaceholder"></div>
+			<div data-bind="infoEl"></div>
+		</div>
+	</div>
+	<script type="module" src="/js/main.js"></script>
+</body>
+</html>
