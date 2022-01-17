@@ -177,6 +177,18 @@ export const ITEMS = [{
 	place: PLACES.KITCHEN,
 	title: "Dřez"
 }, {
+	dimWidth: 0.6,
+	dimHeight: 0.65,
+	id: "PTS",
+	place: PLACES.KITCHEN,
+	title: "Potravinová skříň"
+}, {
+	dimWidth: 0.48,
+	dimHeight: 0.53,
+	id: "ZID",
+	place: PLACES.KITCHEN,
+	title: "Židle"
+}, {
 	dimWidth: 2.7,
 	dimHeight: 2,
 	dimSideWidth: 1.05,
@@ -191,6 +203,39 @@ export const ITEMS = [{
 	id: "KOC",
 	place: PLACES.HALL,
 	title: "Kočárek"
+}, {
+	dimWidth: 0.76,
+	dimHeight: 0.31,
+	id: "SKK",
+	place: PLACES.BATHROOM,
+	title: "Skříňka",
+	url: "https://www.sconto.cz/produkt/vysoka-koupelnova-skrin-pool-bila-vysoky-lesk-414178911"
+}, {
+	dimWidth: 0.44,
+	dimHeight: 0.35,
+	id: "KNP",
+	place: PLACES.BATHROOM,
+	title: "Koš na prádlo",
+	url: "https://www.alza.cz/curver-kos-na-spinave-pradlo-infinity-59l-sedy-d5710248.htm"
+}, {
+	dimWidth: 1.6,
+	dimHeight: 0.8,
+	id: "DPO",
+	place: PLACES.ROOM,
+	title: "Dětská postýlka",
+	url: "https://www.babynabytek.cz/p/6066-detska-postel-clasic-bila/?utm_source=biano.cz"
+}, {
+	dimWidth: 2,
+	dimHeight: 0.9,
+	id: "NPO",
+	place: PLACES.ROOM,
+	title: "Postel pro jednoho"
+}, {
+	dimWidth: 1.8,
+	dimHeight: 0.8,
+	id: "VST",
+	place: PLACES.ROOM,
+	title: "Velký stůl"
 }];
 
 export const DOOR_TYPES = [{
