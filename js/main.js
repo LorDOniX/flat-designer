@@ -177,7 +177,7 @@ function saveLsData() {
 
 function getLsData() {
 	try {
-		return JSON.parse(localStorage.getItem("flatData"));
+		return JSON.parse(localStorage.getItem("flatData")) || DEFAULT_STATE;
 	} catch (ex) {
 		return DEFAULT_STATE;
 	}
