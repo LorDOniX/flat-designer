@@ -28,6 +28,7 @@ let selAppItem = null;
 let selProject = "";
 let popup = null;
 let projectsData = null;
+let serverProjects = [];
 
 function showSelected(contEl, item, app) {
 	contEl.innerHTML = "";
@@ -207,14 +208,18 @@ function fillLists() {
 	});
 }
 
+function setProjectsData(data) {
+	projectsData = data;
+	saveLsData();
+	fillProjects();
+	setProject();
+}
+
 function loadJSON() {
 	if (dom.jsonFile.files.length) {
 		const fr = new FileReader();
 		fr.addEventListener("load", e => {
-			projectsData = JSON.parse(fr.result);
-			saveLsData();
-			fillProjects();
-			setProject();
+			setProjectsData(JSON.parse(fr.result));
 		});
 		fr.readAsText(dom.jsonFile.files[0]);
 	}
@@ -222,10 +227,7 @@ function loadJSON() {
 
 function clearMemory() {
 	if (confirm("Opravdu smazat všechno z paměti?")) {
-		projectsData = DEFAULT_STATE;
-		saveLsData();
-		fillProjects();
-		setProject();
+		setProjectsData(DEFAULT_STATE);
 	}
 }
 
@@ -240,15 +242,11 @@ function addProject() {
 	const filtered = projectsData.filter(item => item.name == name);
 
 	if (!filtered.length) {
-		projectsData.push({
+		setProjectsData([...projectsData, {
 			name,
 			date: getDate(),
 			list: []
-		});
-
-		saveLsData();
-		fillProjects();
-		setProject(name);
+		}]);
 	}
 }
 
@@ -289,6 +287,49 @@ async function saveAsImage() {
 	downloadJPGFile(`${selProject.name} - ${dom.projectList.value}.png`, blobData);
 }
 
+async function loadProjects() {
+	const data = await fetch("/projects");
+	const json = await data.json();
+
+	serverProjects = json.projects;
+
+	for (const project of json.projects) {
+		dom.projects.append(domCreate({
+			el: "a",
+			text: `${project.json[0].name} (${project.json[0].date})`,
+			href: "#",
+			onclick: event => {
+				event.stopPropagation();
+				event.preventDefault();
+				setProjectsData(project.json);
+			},
+		}));
+	}
+}
+
+async function overwrite() {
+	const filtered = serverProjects.filter(item => item.json[0].name === projectsData[0].name)[0];
+
+	if (!filtered) {
+		return;
+	}
+
+	const request = await fetch("/update-project", {
+		method: "POST",
+		headers: {
+			"Accept": 'application/json',
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({
+			name: filtered.name,
+			json: projectsData,
+		}),
+	});
+	const json = await request.json();
+
+	console.log(json);
+}
+
 function main() {
 	projectsData = getLsData();
 
@@ -305,11 +346,13 @@ function main() {
 		projectChange,
 		removeList,
 		saveAsImage,
+		overwrite,
 	});
 	bindKeys();
 	setBtn();
 	fillProjects();
 	setProject(projectsData[0].name);
+	loadProjects();
 }
 
 main();

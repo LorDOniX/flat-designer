@@ -134,3 +134,16 @@ button {
 .popup .category-list li:hover {
 	color: green;
 }
+
+div[data-bind="projects"] {
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+	margin-top: 10px;
+	flex-wrap: wrap;
+}
+
+div[data-bind="projects"] a {
+	color: #333;
+	text-decoration: none;
+}

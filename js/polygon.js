@@ -61,7 +61,7 @@ export default class Polygon extends Entity {
 				this._drawDiagonals(ctx);
 			}
 
-			this._drawId(ctx, color);
+			this._drawTitle(ctx, color);
 		}
 	}
 
@@ -78,14 +78,30 @@ export default class Polygon extends Entity {
 		ctx.stroke();
 	}
 
-	_drawId(ctx, color) {
+	_drawTitle(ctx, color) {
 		// vykreslime ID
-		const width = ctx.measureText(this._data.id).width;
-		ctx.fillStyle = "#fff";
+		let title = this._data.title;
+		const maxWidth = parseFloat(this.getSize().width) - 5;
+		let width = ctx.measureText(title).width;
+
+		if (width > maxWidth) {
+			for (let ind = title.length - 2; ind >= 0; ind--) {
+				title = this._data.title.slice(0, ind);
+				width = ctx.measureText(title).width;
+
+				if (width <= maxWidth) {
+					break;
+				}
+			}
+		}
+
 		const textX = this._pointsData.middle[0] - width / 2;
-		ctx.fillRect(textX, this._pointsData.middle[1] - this._fontSize, width, this._fontSize * 2);
+		const textPadding = 2;
+
+		ctx.fillStyle = "#fff";
+		ctx.fillRect(textX, this._pointsData.middle[1] - (this._fontSize / 2) - textPadding, width, this._fontSize + textPadding);
 		ctx.fillStyle = color.getRGBA();
-		ctx.fillText(this._data.id, textX, this._pointsData.middle[1] - this._fontSize / 2);
+		ctx.fillText(title, textX, this._pointsData.middle[1] - this._fontSize / 2);
 	}
 
 	intersection(x, y) {

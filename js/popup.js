@@ -75,13 +75,21 @@ export default class Popup {
 		this._app = app;
 		this._dom = {};
 		this._onClose = () => {};
+
+		let wasDown = false;
+
 		this._container = domCreate({
 			el: "div",
 			class: "popup-cover",
-			onclick: e => {
-				if (!this._dom.popup.contains(e.target)) {
+			onpointerdown: e => {
+				wasDown = !this._dom.popup.contains(e.target);
+			},
+			onpointerup: e => {
+				if (wasDown) {
 					this.close();
 				}
+
+				wasDown = false;
 			},
 			child: {
 				el: "div",

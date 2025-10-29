@@ -1,0 +1,1054 @@
+[
+	{
+		"name": "NovyByt",
+		"date": "5. 4. 2022",
+		"list": [
+			{
+				"name": "Lodžie",
+				"data": {
+					"config": {
+						"dimWidth": 4,
+						"dimHeight": 1.7,
+						"canWidth": 752,
+						"padding": 50,
+						"ratio": 2.3529411764705883,
+						"width": 852,
+						"height": 419,
+						"pad2": 100,
+						"dimToPx": 0.005319148936170213,
+						"pxToDim": 188
+					},
+					"items": [
+						{
+							"type": "Door",
+							"points": [
+								{
+									"x": 652,
+									"y": 484
+								},
+								{
+									"x": 652,
+									"y": 353
+								},
+								{
+									"x": 521,
+									"y": 353
+								}
+							],
+							"width": 131,
+							"quadrant": 3,
+							"data": {
+								"id": "D",
+								"title": "Dveře",
+								"width": 0.7,
+								"height": 0.7
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 51,
+									"y": 389
+								},
+								{
+									"x": 521,
+									"y": 389
+								},
+								{
+									"x": 521,
+									"y": 407
+								},
+								{
+									"x": 51,
+									"y": 407
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 2.5,
+								"height": 0.1
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 652,
+									"y": 388
+								},
+								{
+									"x": 802,
+									"y": 388
+								},
+								{
+									"x": 802,
+									"y": 406
+								},
+								{
+									"x": 652,
+									"y": 406
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.8,
+								"height": 0.1
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "Ložnice",
+				"data": {
+					"config": {
+						"dimWidth": 3.46,
+						"dimHeight": 2.8,
+						"canWidth": 752,
+						"padding": 50,
+						"ratio": 1.2357142857142858,
+						"width": 852,
+						"height": 708,
+						"pad2": 100,
+						"dimToPx": 0.004601063829787234,
+						"pxToDim": 217.34104046242774
+					},
+					"items": [
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 149.5,
+									"y": 658
+								},
+								{
+									"x": 149.5,
+									"y": 202
+								},
+								{
+									"x": 540.5,
+									"y": 202
+								},
+								{
+									"x": 540.5,
+									"y": 658
+								}
+							],
+							"data": {
+								"id": "POS",
+								"title": "Postel",
+								"width": 2.1,
+								"height": 1.8
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 149,
+									"y": 658
+								},
+								{
+									"x": 50,
+									"y": 658
+								},
+								{
+									"x": 50,
+									"y": 567
+								},
+								{
+									"x": 149,
+									"y": 567
+								}
+							],
+							"data": {
+								"id": "NST",
+								"title": "Noční stolek",
+								"width": 0.46,
+								"height": 0.42
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 541,
+									"y": 567
+								},
+								{
+									"x": 640,
+									"y": 567
+								},
+								{
+									"x": 640,
+									"y": 658
+								},
+								{
+									"x": 541,
+									"y": 658
+								}
+							],
+							"data": {
+								"id": "NST",
+								"title": "Noční stolek",
+								"width": 0.46,
+								"height": 0.42
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 708.5,
+									"y": 657.5
+								},
+								{
+									"x": 708.5,
+									"y": 451.5
+								},
+								{
+									"x": 801.5,
+									"y": 451.5
+								},
+								{
+									"x": 801.5,
+									"y": 657.5
+								}
+							],
+							"data": {
+								"id": "OSS",
+								"title": "Osvětlený stůl",
+								"width": 0.95,
+								"height": 0.43
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 804,
+									"y": 87
+								},
+								{
+									"x": 825,
+									"y": 87
+								},
+								{
+									"x": 825,
+									"y": 239
+								},
+								{
+									"x": 804,
+									"y": 239
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 0.7
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 540,
+									"y": 231
+								},
+								{
+									"x": 692,
+									"y": 231
+								},
+								{
+									"x": 692,
+									"y": 535
+								},
+								{
+									"x": 540,
+									"y": 535
+								}
+							],
+							"data": {
+								"id": "DPO",
+								"title": "Postýlka",
+								"width": 0.7,
+								"height": 1.4
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "Obývák",
+				"data": {
+					"config": {
+						"dimWidth": 4.55,
+						"dimHeight": 4.33,
+						"canWidth": 752,
+						"padding": 50,
+						"ratio": 1.0508083140877598,
+						"width": 852,
+						"height": 815,
+						"pad2": 100,
+						"dimToPx": 0.006050531914893617,
+						"pxToDim": 165.27472527472528
+					},
+					"items": [
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 49,
+									"y": 570
+								},
+								{
+									"x": 379,
+									"y": 570
+								},
+								{
+									"x": 379,
+									"y": 765
+								},
+								{
+									"x": 49,
+									"y": 765
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 2,
+								"height": 1.18
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 215,
+									"y": 514
+								},
+								{
+									"x": 661,
+									"y": 514
+								},
+								{
+									"x": 661,
+									"y": 184
+								},
+								{
+									"x": 488,
+									"y": 184
+								},
+								{
+									"x": 488,
+									"y": 349
+								},
+								{
+									"x": 215,
+									"y": 349
+								}
+							],
+							"data": {
+								"id": "GAU",
+								"title": "Gauč",
+								"width": 2.7,
+								"height": 2
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 315,
+									"y": 216
+								},
+								{
+									"x": 422,
+									"y": 216
+								},
+								{
+									"x": 422,
+									"y": 298
+								},
+								{
+									"x": 315,
+									"y": 298
+								}
+							],
+							"data": {
+								"id": "STO",
+								"title": "Konferenční stůl",
+								"width": 0.65,
+								"height": 0.5
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 194,
+									"y": 124
+								},
+								{
+									"x": 194,
+									"y": 50
+								},
+								{
+									"x": 656,
+									"y": 50
+								},
+								{
+									"x": 656,
+									"y": 124
+								}
+							],
+							"data": {
+								"id": "PST",
+								"title": "Placatá stěna",
+								"width": 0.45,
+								"height": 2.8
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 50,
+									"y": 87
+								},
+								{
+									"x": 96,
+									"y": 87
+								},
+								{
+									"x": 96,
+									"y": 219
+								},
+								{
+									"x": 50,
+									"y": 219
+								}
+							],
+							"data": {
+								"id": "KNI",
+								"title": "Knihovna",
+								"width": 0.28,
+								"height": 0.8
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 50,
+									"y": 220
+								},
+								{
+									"x": 96,
+									"y": 220
+								},
+								{
+									"x": 96,
+									"y": 352
+								},
+								{
+									"x": 50,
+									"y": 352
+								}
+							],
+							"data": {
+								"id": "KNI",
+								"title": "Knihovna",
+								"width": 0.28,
+								"height": 0.8
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 32,
+									"y": 50
+								},
+								{
+									"x": 48,
+									"y": 50
+								},
+								{
+									"x": 48,
+									"y": 453
+								},
+								{
+									"x": 32,
+									"y": 453
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 2.44
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 380,
+									"y": 787
+								},
+								{
+									"x": 578,
+									"y": 787
+								},
+								{
+									"x": 578,
+									"y": 803
+								},
+								{
+									"x": 380,
+									"y": 803
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 1.2,
+								"height": 0.1
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 714,
+									"y": 784
+								},
+								{
+									"x": 803,
+									"y": 784
+								},
+								{
+									"x": 803,
+									"y": 800
+								},
+								{
+									"x": 714,
+									"y": 800
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.54,
+								"height": 0.1
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 834,
+									"y": 577
+								},
+								{
+									"x": 850,
+									"y": 577
+								},
+								{
+									"x": 850,
+									"y": 765
+								},
+								{
+									"x": 834,
+									"y": 765
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 1.14
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 831,
+									"y": 52
+								},
+								{
+									"x": 847,
+									"y": 52
+								},
+								{
+									"x": 847,
+									"y": 514
+								},
+								{
+									"x": 831,
+									"y": 514
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 2.8
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 389,
+									"y": 670
+								},
+								{
+									"x": 468,
+									"y": 670
+								},
+								{
+									"x": 468,
+									"y": 757
+								},
+								{
+									"x": 389,
+									"y": 757
+								}
+							],
+							"data": {
+								"id": "ZID",
+								"title": "Židle",
+								"width": 0.48,
+								"height": 0.53
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 482,
+									"y": 670
+								},
+								{
+									"x": 561,
+									"y": 670
+								},
+								{
+									"x": 561,
+									"y": 757
+								},
+								{
+									"x": 482,
+									"y": 757
+								}
+							],
+							"data": {
+								"id": "ZID",
+								"title": "Židle",
+								"width": 0.48,
+								"height": 0.53
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 733,
+									"y": 670
+								},
+								{
+									"x": 799,
+									"y": 670
+								},
+								{
+									"x": 799,
+									"y": 760
+								},
+								{
+									"x": 733,
+									"y": 760
+								}
+							],
+							"data": {
+								"id": "VIN",
+								"title": "Vinotéka",
+								"width": 0.4,
+								"height": 0.55
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "PokojPracovna",
+				"data": {
+					"config": {
+						"dimWidth": 3.55,
+						"dimHeight": 2.21,
+						"canWidth": 752,
+						"padding": 50,
+						"ratio": 1.6063348416289591,
+						"width": 852,
+						"height": 568,
+						"pad2": 100,
+						"dimToPx": 0.004720744680851064,
+						"pxToDim": 211.83098591549296
+					},
+					"items": [
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 830,
+									"y": 49
+								},
+								{
+									"x": 851,
+									"y": 49
+								},
+								{
+									"x": 851,
+									"y": 193
+								},
+								{
+									"x": 830,
+									"y": 193
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 0.68
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 832,
+									"y": 367
+								},
+								{
+									"x": 853,
+									"y": 367
+								},
+								{
+									"x": 853,
+									"y": 517
+								},
+								{
+									"x": 832,
+									"y": 517
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 0.71
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 488,
+									"y": 219
+								},
+								{
+									"x": 107,
+									"y": 219
+								},
+								{
+									"x": 107,
+									"y": 50
+								},
+								{
+									"x": 488,
+									"y": 50
+								}
+							],
+							"data": {
+								"id": "VST",
+								"title": "Velký stůl",
+								"width": 1.8,
+								"height": 0.8
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 336,
+									"y": 223
+								},
+								{
+									"x": 437,
+									"y": 223
+								},
+								{
+									"x": 437,
+									"y": 335
+								},
+								{
+									"x": 336,
+									"y": 335
+								}
+							],
+							"data": {
+								"id": "ZID",
+								"title": "Židle",
+								"width": 0.48,
+								"height": 0.53
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 163,
+									"y": 229
+								},
+								{
+									"x": 264,
+									"y": 229
+								},
+								{
+									"x": 264,
+									"y": 341
+								},
+								{
+									"x": 163,
+									"y": 341
+								}
+							],
+							"data": {
+								"id": "ZID",
+								"title": "Židle",
+								"width": 0.48,
+								"height": 0.53
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 498,
+									"y": 518
+								},
+								{
+									"x": 304,
+									"y": 518
+								},
+								{
+									"x": 304,
+									"y": 446
+								},
+								{
+									"x": 498,
+									"y": 446
+								}
+							],
+							"data": {
+								"id": "LKT",
+								"title": "Komoda na TV",
+								"width": 0.92,
+								"height": 0.34
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 50,
+									"y": 434
+								},
+								{
+									"x": 304,
+									"y": 434
+								},
+								{
+									"x": 304,
+									"y": 518
+								},
+								{
+									"x": 50,
+									"y": 518
+								}
+							],
+							"data": {
+								"id": "SL1",
+								"title": "Malé skříně",
+								"width": 1.2,
+								"height": 0.4
+							}
+						}
+					]
+				}
+			},
+			{
+				"name": "PokojTutinek",
+				"data": {
+					"config": {
+						"dimWidth": 3.4,
+						"dimHeight": 2.25,
+						"canWidth": 752,
+						"padding": 50,
+						"ratio": 1.511111111111111,
+						"width": 852,
+						"height": 597,
+						"pad2": 100,
+						"dimToPx": 0.0045212765957446804,
+						"pxToDim": 221.1764705882353
+					},
+					"items": [
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 829,
+									"y": 50
+								},
+								{
+									"x": 851,
+									"y": 50
+								},
+								{
+									"x": 851,
+									"y": 359
+								},
+								{
+									"x": 829,
+									"y": 359
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 1.4
+							}
+						},
+						{
+							"type": "Obsticle",
+							"points": [
+								{
+									"x": 829,
+									"y": 513
+								},
+								{
+									"x": 851,
+									"y": 513
+								},
+								{
+									"x": 851,
+									"y": 546
+								},
+								{
+									"x": 829,
+									"y": 546
+								}
+							],
+							"data": {
+								"id": "O",
+								"title": "Překážka",
+								"width": 0.1,
+								"height": 0.15
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 802,
+									"y": 337
+								},
+								{
+									"x": 630,
+									"y": 337
+								},
+								{
+									"x": 630,
+									"y": 72
+								},
+								{
+									"x": 802,
+									"y": 72
+								}
+							],
+							"data": {
+								"id": "PBP",
+								"title": "Přebalovací pult",
+								"width": 0.78,
+								"height": 1.2
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 50,
+									"y": 50.5
+								},
+								{
+									"x": 359,
+									"y": 50.5
+								},
+								{
+									"x": 359,
+									"y": 204.5
+								},
+								{
+									"x": 50,
+									"y": 204.5
+								}
+							],
+							"data": {
+								"id": "PUS",
+								"title": "Původní stůl",
+								"width": 1.4,
+								"height": 0.7
+							}
+						},
+						{
+							"type": "Polygon",
+							"points": [
+								{
+									"x": 360,
+									"y": 50
+								},
+								{
+									"x": 536,
+									"y": 50
+								},
+								{
+									"x": 536,
+									"y": 138
+								},
+								{
+									"x": 360,
+									"y": 138
+								}
+							],
+							"data": {
+								"id": "MSP",
+								"title": "Menší skříň",
+								"width": 0.8,
+								"height": 0.4
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+]

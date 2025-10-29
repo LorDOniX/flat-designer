@@ -66,7 +66,7 @@ export function getDoorQuadrant(isInside, isLeft) {
 
 export function downloadJsonFile(filename, data) {
 	// Creating a blob object from non-blob data using the Blob constructor
-	const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
+	const blob = new Blob([JSON.stringify(data, null, "\t")], { type: 'application/json' });
 	const url = URL.createObjectURL(blob);
 	// Create a new anchor element
 	const a = document.createElement('a');

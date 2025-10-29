@@ -1,4 +1,5 @@
 const PLACES = {
+	ROOM20: "Pokojíček 2.0",
 	KITCHEN: "Kuchyně",
 	ROOM: "Pokoj",
 	LIVING_ROOM: "Obývák",
@@ -9,6 +10,36 @@ const PLACES = {
 };
 
 export const ITEMS = [{
+	dimWidth: 2.47,
+	dimHeight: 0.95,
+	id: "DP20PP",
+	place: PLACES.ROOM20,
+	title: "Patrová postel"
+}, {
+	dimWidth: 1.2,
+	dimHeight: 0.568,
+	id: "DP20S",
+	place: PLACES.ROOM20,
+	title: "Skříň"
+}, {
+	dimWidth: 1.2,
+	dimHeight: 0.44,
+	id: "DP20H",
+	place: PLACES.ROOM20,
+	title: "Hračky skříň"
+}, {
+	dimWidth: 0.83,
+	dimHeight: 0.58,
+	id: "DP20DS",
+	place: PLACES.ROOM20,
+	title: "Dětský stolek"
+}, {
+	dimWidth: 0.40,
+	dimHeight: 0.28,
+	id: "DP20K",
+	place: PLACES.ROOM20,
+	title: "Knihovna"
+}, {
 	dimWidth: 1.2,
 	dimHeight: 0.8,
 	id: "JIS",

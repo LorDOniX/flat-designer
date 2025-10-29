@@ -18,10 +18,9 @@ export default class Obsticle extends Polygon {
 	}
 
 	draw(ctx, color, cycle = true) {
-		super.draw(ctx, color, cycle);
-
 		const pd = this._pointsData;
 		ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
 		ctx.fillRect(pd.min[0], pd.min[1], pd.max[0] - pd.min[0], pd.max[1] - pd.min[1]);
+		super.draw(ctx, color, cycle);
 	}
 }
