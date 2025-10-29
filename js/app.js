@@ -238,9 +238,16 @@ export default class App {
 		};
 	}
 
-	getBlob() {
+	getBlob(scale = 1) {
 		return new Promise(resolve => {
-			this._canvas.toBlob(resolve);
+			const newCanvas = document.createElement("canvas");
+			const ctx = newCanvas.getContext("2d");
+
+			newCanvas.width = this._canvas.width * scale;
+			newCanvas.height = this._canvas.height * scale;
+
+			ctx.drawImage(this._canvas, 0, 0, this._canvas.width, this._canvas.height, 0, 0, newCanvas.width, newCanvas.height);
+			newCanvas.toBlob(resolve);
 		});
 	}
 

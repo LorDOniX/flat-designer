@@ -283,7 +283,7 @@ function saveJSON() {
 }
 
 async function saveAsImage() {
-	const blobData = await app.getBlob();
+	const blobData = await app.getBlob(2);
 	downloadJPGFile(`${selProject.name} - ${dom.projectList.value}.png`, blobData);
 }
 
